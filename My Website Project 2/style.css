@@ -1,0 +1,31 @@
+*{
+margin: 0;
+padding: 0;
+}
+.header{
+min-height: 100vh;
+width: 100%;
+background-image: url("picture list/image 3.jpg");
+background-position: center;  
+background-size: cover;
+position: relative;
+}
+h1{
+padding:50px;
+color: red;
+}
+ul li a{
+text-decoration: none;
+}
+nav{
+display: flex;
+padding: 3% 5%;
+justify-content: space-between;
+align-items: center;
+}
+nav h1{
+font-size: 50px;
+}
+
+
+

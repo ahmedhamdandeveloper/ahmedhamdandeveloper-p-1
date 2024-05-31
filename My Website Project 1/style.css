@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("picture list/image 9.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 3% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h3{
+    color: red;
+    font-size: 33px;
+    text-transform: uppercase;
+}
+.nav-menu{
+    flex: 1;
+    text-align: right;
+    text-decoration: none;
+}
+.nav-menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 5px;
+    position: relative;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.nav-menu ul li::after{
+    content: '';
+    width: 0px;
+    height: 5px;
+    background: black;
+    display: block;
+    margin: auto;
+    position: absolute;
+    bottom: -5px;
+    transition: .5s;
+}
+.nav-menu ul li:hover::after{
+    width: 100%;
+}
+.profile-image{
+    width: 28%;
+    position: absolute;
+    top: 44%;
+    left: 60%;
+    transform: translate(25%, -28%);
+}
+.Mytitle{
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  transform: translate(5o%, -50%);
+}
+.Mytitle h1{
+  margin: 0px 100px;
+  font-size: 60px;
+  color: green;
+}
+.Mytitle p{
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: black;
+}
+.Mytitle a{
+  display: inline block;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  padding: 13px 30px;
+  font-size: 14; 
+}
+.Mytitle a:hover{
+  background: yellow;
+  color: black;
+  border: 2px solid black;
+  transition: 0.1s;
+}  
+nav h3{
+  color: red;
+  font-size: 33px;
+  text-transform: uppercase
+}
+nav span{
+  display: none;
+}
+@media(max-width: 700px){
+  .Mytitle{
+     width: 90%;
+     color: white;
+     position: absolute;
+     top: 50%;
+     left: 6%;
+     transform: translate(5o%, -50%);
+     text-align: center;
+   }
+   .Mytitle h1{
+      font-size: 30px;
+      margin: 0px 10px; 
+   }
+   nav span{
+     display: block;
+     color: white; 
+     margin: 10px;
+     font-size: 20px;
+     carsor: pointer;
+   }
+   .nav-menu{
+      position: absolute;
+      background: rgba(0,0,0,0.2);
+      height: 100vh;
+      width: 300px;
+      top: 0;
+      right: -300px;
+      text-align: left;
+      z-index: 1;
+      transition: 2s;
+   }
+   .nav-menu ul li{
+      display: block;
+      margin: 1px 0;
+   }
+   .nav-menu ul{
+      padding: 20px;
+   }
+   .profile-image{
+      width: 38%;
+      position: absolute;
+      top: 20%;
+      left: 30%;
+      transform: translate(10%, -28%);
+   }
+   nav h3{
+      color: red;
+      font-size: 22px;
+      text-transform: uppercase;
+   }   
+}
+
+
+
+/*----------------------------------about me----------------------------------*/
+.row{
+   display: flex;
+   margin-top: 5%;
+   justify-content: space-between;
+   margin-left: 40%; 
+}
+.about-me{
+   margin: auto;
+   text-align: center;
+   width: 80%;
+   padding-top: 80px;
+}
+.about-me h1{
+   text-decoration: underline;
+   font-size: 45px;
+   color: gold;
+}
+.about-me-col{
+   border-radius: 10px;
+   margin-bottom: 2%;
+   flex-basis: 50%;
+}
+.about-me-col img{
+   border-radius: 50%;
+   width: 120%;
+   padding: 70px;
+   height: 60vh;
+   margin-left: -220%;
+   margin-top: -35%;
+}
+.about-me-col h2{
+   margin-top: 14px;
+   margin-bottom: 14px;
+   text-align: left;
+   margin-left: -25%;
+   font-size: 32px;
+   color: blue;
+}
+.about-me-col p{
+   color: black; 
+   font-size: 20px;
+   font-weight: 300;
+   line-height: 20px;
+   padding: 12px;
+   text-align: center;
+   margin-left: -50%;
+}
+@media(max-width: 700px){
+   .row{
+       flex-direction: column;
+   }
+   .about-me h1{
+       text-decoration: underline;
+       font-size: 45px;
+       color: gold;
+       margin-top: -10%;
+   }
+   .about-me-col img{
+       border-radius: 50%;
+       width: 120%;
+       padding: 70px;
+       height: 55vh;
+       margin-left: -70%;
+       margin-top: -30%;
+   }
+   .about-me-col h2{
+       margin-top: -15%;
+       margin-bottom: 14%;
+       text-align: left;
+       margin-left: -40%;
+       font-size: 32px;
+       color: blue;
+   }
+   .about-me-col p{
+       color: black; 
+       font-size: 20px;
+       line-height: 22px;
+       padding: 1px;
+       text-align: center;
+       margin-left: -55%;
+       margin-top: -5%; 
+       margin-bottom: 14%; 
+   } 
+}
+
+
+
+/*----------------------------------my skills----------------------------------*/
+
+.my-skills{
+   width: 80%;
+   margin: auto;
+   background: #30F2F2;
+   padding-top: 100px;
+   text-align: center;
+}
+.my-skills h1{
+   margin-top: -5%;
+   text-decoration: underline;
+}
+#h21{
+   margin-left: -130%;
+}
+.h22{
+    margin-left: -200%;
+}
+.my-skills p.p1{
+   margin-top: 6%;
+   margin-left: -130%;
+   margin-bottom: 5%;
+}
+.my-skills p.p2{
+   margin-top: 6%;
+   margin-left: -130%;
+   margin-bottom: 10%;
+}
+.my-skills-col li{
+  margin-left: -100%;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
