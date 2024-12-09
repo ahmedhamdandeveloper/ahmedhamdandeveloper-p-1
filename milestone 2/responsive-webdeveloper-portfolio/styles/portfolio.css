@@ -1,0 +1,311 @@
+/* common shared styles */
+
+nav h3{
+    font-family: 'lato',sans-serif;
+}
+nav ul li{
+    font-family: 'open sans',sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.text-primary{
+    color: #FD6E0A;
+}
+.text-primary-2{
+    color: blue;
+}
+.btn-primary{
+    border-radius: 5px;
+    background-color: #FD6E0A;
+    border: 0;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 15px 30px;
+}
+.button-primary{
+   border-radius: 5px;
+   font-size: 25px;
+   font-weight: 700; 
+   color: #FD6E0A;
+   background-color: #FFF;
+   border: 2px solid #FD6E0A;
+   padding: 15px 14px;
+   margin-left: 20px; 
+}
+.section-ttl{
+    color: #181818;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'lato',sans-serif;
+}
+.section-description{
+    color: #757575;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'lato',sans-serif;
+}
+
+/* nav related styles */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 200px;
+}
+.nav-title{
+    color: #181818;
+    font-size: 45px;
+    font-weight: 800;
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-right: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: #474747;
+}
+
+/* header related styles */
+
+.header{
+    background-color: #FFF8F3;
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, top left;
+}
+.banner{
+    padding: 30px 30px 0px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner .profile-pic{
+    width: 500px;
+}
+.bnr-greeting{
+    font-size: 40px;
+    color: #474747;
+    margin-bottom: 0px;
+    font-family: 'lato',sans-serif;
+    font-weight: 200;
+}
+.bnr-title{
+    font-size: 80px;
+    font-weight: 800;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-family: 'lato',sans-serif;
+}
+.bnr-p{
+    font-family: 'open sans',sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #757575;
+    font-size: 15px;
+}
+/* main section styles */
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* about section styles */
+
+.about{
+    padding: 130px;
+    border-radius: 10px;
+    background-color: #FFF8F3;
+    margin: 130px 0px;
+}
+.about-main-info{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'lato',sans-serif;
+}
+.about-info{
+    text-align: center;
+}
+main section{
+    margin-top: 130px
+}
+
+/*skill related styles*/
+
+#what-i-do-description{
+    padding: 30px 150px;
+}
+.skills-container{
+    display: flex;
+    font-family: 'lato',sans-serif;
+    gap: 25px;
+}
+.skill{
+    padding: 70px 4px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 10px 6px 20px 0px #A3A3A3;
+}
+.skill-discription{
+    color: #757575;
+    font-size: 15px;
+    padding: 10px
+}
+.skill-title{
+    padding-left: 10px;
+}
+.skill-pic{
+    padding-left: 10px;
+}
+
+/* resume section styles */
+
+.resume-column-title{
+    color: #474747;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'lato',sans-serif;
+}
+.resume-item-title{
+    color: #474747;
+    font-family: 'lato',sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+.resume-item-info{
+    color: #757575; 
+    font-family: 'lato',sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+.resume-item-description{
+    color: #757575; 
+    font-family: 'lato',sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+.resume-container{
+    display: flex;
+    gap: 70px;
+}
+.resume-container hr{
+    margin: 30px -35px 30px 0px;
+}
+.download-cv{
+    text-align: center;
+    margin: 50px;
+}
+
+/* footer styles */
+
+footer{
+    display: flex;
+    background: #FFF8F3;
+    margin-top: 100px;
+    padding: 130px 200px;
+    gap: 100px;
+}
+.footer-column{
+    width: 50%;
+}
+.contact-from input[type="text"], .contact-from input[type="email"], textarea{
+    display: block;
+    margin-bottom: 24px;
+    padding: 18px 35px;
+    color: #757575;
+    border-radius: 5px;
+    background: #FFF; 
+    border: 0px;
+    width: 100%;
+}
+.social-icon a{
+    margin-right: 25px;
+    text-align: left;
+}
+#section-ttl-2{
+    text-align: left;
+}
+.footer-description{
+    color: #474747;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'lato',sans-serif; 
+    margin-bottom: 28px;
+}
+
+/* Responsive style */
+
+/* Mobile devices */
+.hide{
+    display: none;
+}
+@media screen and (max-width: 576px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
